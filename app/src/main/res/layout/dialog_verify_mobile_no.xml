@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:id="@+id/tvMsg1"
+        android:padding="10dp"
+        android:background="#C51F36"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:layout_gravity="center"
+        android:text="Verify Mobile Number" />
+
+    <EditText
+        android:layout_margin="20dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/etCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="Enter Your Verification Code" />
+    <LinearLayout
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvMsg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+        <com.rafakob.drawme.DrawMeButton
+            android:id="@+id/btnCancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif"
+            android:text="Cancel"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            app:dm_backColor="@android:color/transparent"
+            app:dm_backColorDisabled="@android:color/transparent"
+            app:dm_backColorPressed="@android:color/white" />
+        <com.rafakob.drawme.DrawMeButton
+            android:id="@+id/btnDone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif"
+            android:text="Done"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            app:dm_backColor="#1CAAE1"
+            app:dm_backColorDisabled="@android:color/transparent"
+            app:dm_backColorPressed="@android:color/white" />
+
+        <com.rafakob.drawme.DrawMeButton
+            android:id="@+id/btnResend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="Resend"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            app:dm_backColor="#C51F36"
+            app:dm_backColorDisabled="@android:color/transparent"
+            app:dm_backColorPressed="@android:color/white" />
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
+
+

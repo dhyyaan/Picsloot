@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <TextView
+        android:id="@+id/tvMsg"
+        android:layout_marginTop="32dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="Are you sure to delete delivery address?" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvMsg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="81dp"
+        android:orientation="horizontal">
+        <com.rafakob.drawme.DrawMeButton
+            android:id="@+id/btnNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="No"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            app:dm_backColor="#000000"
+            app:dm_backColorDisabled="@android:color/white"
+            app:dm_backColorPressed="@android:color/holo_red_dark" />
+        <com.rafakob.drawme.DrawMeButton
+            android:id="@+id/btnYes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="Yes"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            app:dm_backColor="#C61F36"
+            app:dm_backColorDisabled="@android:color/white"
+            app:dm_backColorPressed="@android:color/holo_red_dark" />
+        </LinearLayout>
+</LinearLayout>
+
+
+
+

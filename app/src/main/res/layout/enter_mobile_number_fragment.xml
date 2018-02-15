@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <FrameLayout
+        android:id="@+id/fragContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:background="@android:color/white"
+        >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/ivLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/logo_withbg"
+                    android:layout_alignParentTop="true"
+                    android:scaleType="centerCrop" />
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/inputLayoutMobileNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="60dp">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/etMobileNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusable="true"
+                        android:inputType="textEmailAddress"
+                        android:hint="Enter your Mobile Number"
+                        android:ems="10"
+                        android:textSize="14sp" />
+                </android.support.design.widget.TextInputLayout>
+                <com.rafakob.drawme.DrawMeButton
+                    android:id="@+id/btnNext"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_below="@+id/ivLogin"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="45dp"
+                    android:fontFamily="sans-serif"
+                    android:textAllCaps="true"
+                    android:text="Next"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp"
+                    app:dm_backColor="#C61F36"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginEnd="12dp"
+                    app:dm_backColorDisabled="@android:color/white"
+                    app:dm_backColorPressed="@android:color/holo_red_dark"
+                    app:dm_radius="4dp" />
+
+
+            </LinearLayout>
+        </ScrollView>
+        <ProgressBar
+            android:visibility="gone"
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+    </FrameLayout>
+</layout>

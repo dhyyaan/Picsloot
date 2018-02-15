@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swiperefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+   <FrameLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <TextView
+           android:visibility="gone"
+           android:layout_gravity="center"
+           android:gravity="center"
+           android:id="@+id/tvNoData"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:textSize="18sp"
+           android:textColor="#2C2C2C"
+           android:text="No Data" />
+       <android.support.v4.widget.NestedScrollView
+           android:id="@+id/nestScroll"
+           android:visibility="visible"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+           <LinearLayout
+               android:orientation="vertical"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+               <TextView
+                   android:layout_marginTop="10dp"
+                   android:layout_marginStart="20dp"
+                   android:layout_marginLeft="20dp"
+                   android:layout_marginRight="20dp"
+                   android:layout_marginEnd="20dp"
+                   android:id="@+id/tvLatestOrder"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:textSize="16sp"
+                   android:textColor="#2C2C2C"
+                   android:text="LATEST ORDER" />
+               <com.rafakob.drawme.DrawMeLinearLayout
+                   android:orientation="vertical"
+                   android:layout_margin="8dp"
+                   app:dm_stroke="1dp"
+                   app:dm_radius="2dp"
+                   android:paddingBottom="12dp"
+                   app:dm_strokeColor="#E1E1E1"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+                   <FrameLayout
+                       android:id="@+id/flUser"
+                       android:layout_alignParentTop="true"
+                       android:layout_marginTop="16dp"
+                       android:layout_marginLeft="16dp"
+                       android:layout_marginStart="16dp"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content">
+                       <ImageView
+                           android:id="@+id/ivUser"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           app:srcCompat="@drawable/user" />
+
+                       <TextView
+                           android:layout_marginTop="4dp"
+                           android:id="@+id/tvDateTime"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_marginLeft="35dp"
+                           android:layout_marginStart="35dp"
+                           android:text="Date 22/09/2017, 0:00 PM" />
+                   </FrameLayout>
+
+
+                   <TextView
+                       android:layout_marginTop="4dp"
+                       android:id="@+id/tvNoOfImages"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginLeft="21dp"
+                       android:layout_marginStart="21dp"
+                       android:textColor="#2F2F2F"
+                       android:text="5 images sent" />
+                   <android.support.v7.widget.RecyclerView
+                       android:id="@+id/rv1"
+                       android:layout_below="@+id/ivUser"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:divider="@null"
+                       android:layout_marginTop="8dp"
+                       android:layout_marginEnd="20dp"
+                       android:layout_marginRight="20dp"
+                       android:layout_marginStart="20dp"
+                       android:layout_marginLeft="20dp"
+                       android:orientation="horizontal"
+                       app:reverseLayout="false"
+                       app:layoutManager="android.support.v7.widget.LinearLayoutManager" />
+                   <FrameLayout
+                       android:id="@+id/flImages"
+                       android:layout_alignParentTop="true"
+                       android:layout_marginTop="16dp"
+                       android:layout_marginLeft="16dp"
+                       android:layout_marginStart="16dp"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content">
+                   <ImageView
+                       android:id="@+id/ivImages"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       app:srcCompat="@drawable/images" />
+                       <TextView
+                           android:layout_marginTop="4dp"
+                           android:id="@+id/tvDateTimeImages2"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_marginLeft="35dp"
+                           android:layout_marginStart="35dp"
+                           android:text="Date 17/04/2017, 04:00 PM" />
+                   </FrameLayout>
+
+
+                   <TextView
+                       android:layout_marginTop="4dp"
+                       android:id="@+id/tvName"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginLeft="21dp"
+                       android:layout_marginStart="21dp"
+                       android:textColor="#2F2F2F"
+                       android:text="PicsLoot" />
+                   <FrameLayout
+                       android:id="@+id/flImages2"
+                       android:layout_alignParentTop="true"
+                       android:layout_marginTop="16dp"
+                       android:layout_marginLeft="16dp"
+                       android:layout_marginStart="16dp"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content">
+
+                   <ImageView
+                       android:id="@+id/ivImages2"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       app:srcCompat="@drawable/images" />
+                   <TextView
+                       android:layout_marginTop="4dp"
+                       android:id="@+id/tvDateTimeImages3"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginLeft="35dp"
+                       android:layout_marginStart="35dp"
+                       android:layout_toEndOf="@+id/ivImages2"
+                       android:layout_toRightOf="@+id/ivImages2"
+                       android:text="Date 17/04/2017, 04:00 PM" />
+                   </FrameLayout>
+                   <TextView
+                       android:layout_marginTop="4dp"
+                       android:id="@+id/tvName2"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginLeft="21dp"
+                       android:layout_marginStart="21dp"
+                       android:textColor="#2F2F2F"
+                       android:text="PicsLoot" />
+                   <FrameLayout
+                       android:id="@+id/flCompletet"
+                       android:layout_alignParentTop="true"
+                       android:layout_marginTop="16dp"
+                       android:layout_marginLeft="16dp"
+                       android:layout_marginStart="16dp"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content">
+
+                   <ImageView
+                       android:id="@+id/ivCompletet"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       app:srcCompat="@drawable/complete" />
+                   <TextView
+                       android:layout_marginTop="4dp"
+                       android:id="@+id/tvDateTimeImages4"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginLeft="35dp"
+                       android:layout_marginStart="35dp"
+                       android:text="Date 17/04/2017, 04:00 PM" />
+                   </FrameLayout>
+
+                   <TextView
+                       android:layout_marginTop="4dp"
+                       android:id="@+id/tvStatus"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginLeft="21dp"
+                       android:layout_marginStart="21dp"
+                       android:textColor="#2F2F2F"
+                       android:text="PicsLoot" />
+
+               </com.rafakob.drawme.DrawMeLinearLayout>
+
+               <TextView
+                   android:layout_marginTop="10dp"
+                   android:layout_marginStart="20dp"
+                   android:layout_marginLeft="20dp"
+                   android:layout_marginRight="20dp"
+                   android:layout_marginEnd="20dp"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:textSize="16sp"
+                   android:textColor="#2C2C2C"
+                   android:text="ORDER HISTORY" />
+               <android.support.v7.widget.RecyclerView
+                   android:layout_margin="8dp"
+                   android:id="@+id/recyclerview"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   app:layoutManager="LinearLayoutManager"
+                   />
+           </LinearLayout>
+       </android.support.v4.widget.NestedScrollView>
+
+   </FrameLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</layout>

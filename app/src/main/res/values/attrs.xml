@@ -1,0 +1,55 @@
+<resources>
+
+  <declare-styleable name="OtpView">
+    <attr name="android:inputType" />
+    <attr name="android:textColor" />
+    <attr name="text_background_color" format="color" />
+    <attr name="otp" format="string"/>
+  </declare-styleable>
+
+  <declare-styleable name="CheckBox">
+    <attr name="checkbox_color" format="color"/>
+    <attr name="unchecked_color" format="color"/>
+    <attr name="disabled_color" format="color"/>
+    <attr name="border_color" format="color"/>
+    <attr name="checkbox_size" format="dimension"/>
+    <attr name="invisible_in_unchecked_state" format="boolean"/>
+    <attr name="checked_drawable" format="reference"/>
+    <attr name="unchecked_drawable" format="reference"/>
+    <attr name="show_border_in_check_state" format="boolean"></attr>
+  </declare-styleable>
+
+
+  <declare-styleable name="SubsamplingScaleImageView">
+    <attr name="src" format="reference"/>
+    <attr name="assetName" format="string"/>
+    <attr name="panEnabled" format="boolean"/>
+    <attr name="zoomEnabled" format="boolean"/>
+    <attr name="quickScaleEnabled" format="boolean"/>
+    <attr name="tileBackgroundColor" format="color"/>
+  </declare-styleable>
+
+  <!--For CircularProgressBar-->
+
+  <declare-styleable name="CircularProgressBar">
+    <attr name="arc_progress" format="integer"/>
+    <attr name="arc_angle" format="float"/>
+    <attr name="arc_stroke_width" format="dimension"/>
+    <attr name="arc_max" format="integer"/>
+
+    <attr name="arc_unfinished_color" format="color"/>
+    <attr name="arc_finished_color" format="color"/>
+
+    <attr name="arc_text_size" format="dimension"/>
+    <attr name="arc_text_color" format="color"/>
+
+    <attr name="arc_suffix_text" format="string"/>
+    <attr name="arc_suffix_text_size" format="dimension"/>
+    <attr name="arc_suffix_text_padding" format="dimension"/>
+
+    <attr name="arc_bottom_text" format="string"/>
+    <attr name="arc_bottom_text_size" format="dimension"/>
+  </declare-styleable>
+
+
+</resources>

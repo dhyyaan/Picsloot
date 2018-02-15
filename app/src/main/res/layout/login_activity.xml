@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+<FrameLayout
+    android:id="@+id/fragContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:background="@android:color/white"
+    tools:context="com.think360.picsloot.activities.LoginActivity">
+    <ImageView
+        android:id="@+id/ivLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/logo_withbg"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerCrop" />
+    <LinearLayout
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.rafakob.drawme.DrawMeButton
+            android:fontFamily="sans-serif"
+            android:textAllCaps="false"
+            android:text="Continue with facebook"
+            android:textColor="@android:color/white"
+            app:dm_backColor="#3B5998"
+            app:dm_backColorDisabled="@android:color/white"
+            app:dm_backColorPressed="@android:color/holo_red_dark"
+            app:dm_radius="4dp"
+            android:drawableLeft="@drawable/facebook"
+            android:drawableStart="@drawable/facebook"
+            android:id="@+id/login_button"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:textSize="14sp"
+            android:layout_marginStart="13dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginEnd="14dp"
+            android:layout_gravity="center" />
+
+
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/sign_in_button"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="14sp"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginEnd="12dp"/>
+    </LinearLayout>
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:visibility="gone"
+        android:layout_gravity="center_horizontal|center_vertical" />
+
+</FrameLayout>
+</layout>

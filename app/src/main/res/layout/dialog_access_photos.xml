@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:background="@drawable/rectangle"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:id="@+id/tvMsg1"
+        android:layout_marginTop="32dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="#090909"
+        android:layout_gravity="center"
+        android:text='"Picsloot"Would Like to Access Your Photos' />
+
+    <TextView
+
+        android:id="@+id/tvMsg2"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_gravity="center"
+        android:text="This app need to access photos" />
+    <View
+        android:layout_below="@+id/tvMsg2"
+        android:id="@+id/view"
+        android:background="#E1E1E1"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvMsg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <com.rafakob.drawme.DrawMeButton
+            android:id="@+id/btnDoNotAllow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif"
+            android:text="Don't Allow"
+            android:textAllCaps="false"
+            android:textColor="#0F77FB"
+            android:textSize="14sp"
+
+            app:dm_backColor="@android:color/transparent"
+            app:dm_backColorDisabled="@android:color/transparent"
+            app:dm_backColorPressed="@android:color/white" />
+
+        <com.rafakob.drawme.DrawMeButton
+            android:id="@+id/btnOK"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="OK"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:textColor="#0F77FB"
+            android:textSize="14sp"
+            app:dm_backColor="@android:color/transparent"
+            app:dm_backColorDisabled="@android:color/transparent"
+            app:dm_backColorPressed="@android:color/white" />
+        </LinearLayout>
+</LinearLayout>
+
+
+
+

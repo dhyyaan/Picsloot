@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "847967390152",
+    "firebase_url": "https://picsloot-83ab3.firebaseio.com",
+    "project_id": "picsloot-83ab3",
+    "storage_bucket": "picsloot-83ab3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:847967390152:android:298f8e0c8dd04db7",
+        "android_client_info": {
+          "package_name": "com.think360.picsloot"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "847967390152-7lopf0t44h16jd7qi2adm7mt1htume1j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBWelWkIpAYffpLylWuOE3XJg8CzCjixUo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <FrameLayout
+        android:id="@+id/fragContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:background="@android:color/white"
+        tools:context="com.think360.picsloot.activities.PicsLootActivity">
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="24dp"
+                    android:id="@+id/tvConfirmOrder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="#353535"
+                    android:text="Confirm Your Order" />
+                <ImageView
+                    android:layout_gravity="end|right"
+                    android:id="@+id/ivEditDeliveryAdd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="20dp"
+                    app:srcCompat="@drawable/edit_order" />
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv"
+                    android:layout_below="@+id/ivEditDeliveryAdd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="@null"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="horizontal"
+                    app:reverseLayout="false"
+                    app:layoutManager="android.support.v7.widget.LinearLayoutManager" />
+                <TextView
+                    android:layout_below="@+id/rv"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/tvYourDeliveryAdd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="#353535"
+                    android:text="Your Delivery Address" />
+                <TextView
+                    android:layout_below="@+id/tvYourDeliveryAdd"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="14dp"
+                    android:id="@+id/tvAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:text="HNo.221, Phase 7, Mohali, Punjab" />
+                <TextView
+                    android:layout_below="@+id/tvAddress"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="8dp"
+                    android:id="@+id/pincode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:text="160036" />
+                <TextView
+                    android:layout_below="@+id/pincode"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
+
+                    android:id="@+id/comment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:text="Near Guru Krishan School" />
+                <LinearLayout
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/tvLMobileNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/comment"
+                        android:text="Mobile No: " />
+                    <TextView
+                        android:id="@+id/tvMobileNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/comment"
+                        android:text="8923462735" />
+                </LinearLayout>
+
+                <com.rafakob.drawme.DrawMeButton
+                    android:id="@+id/btnConfirmOrder"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_below="@+id/comment"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="sans-serif"
+                    android:textAllCaps="true"
+                    android:text="Confirm Order"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp"
+                    app:dm_backColor="#C61F36"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginEnd="20dp"
+                    app:dm_backColorDisabled="@android:color/white"
+                    app:dm_backColorPressed="@android:color/holo_red_dark"
+                    app:dm_radius="4dp" />
+
+
+            </LinearLayout>
+
+
+
+
+    </FrameLayout>
+</layout>
