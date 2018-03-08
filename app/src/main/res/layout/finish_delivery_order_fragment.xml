@@ -10,11 +10,10 @@
         android:focusable="true"
         android:focusableInTouchMode="true"
         android:background="@android:color/white"
-        tools:context="com.think360.sotaknights.activities. Activity">
+        tools:context="com.think360.sotaknights.activities.PicsLootActivity">
 
-        <com.think360.picsloot.customview.CircularProgressBar
+        <com.picsloot.customview.CircularProgressBar
             android:id="@+id/circular_progress"
-            android:layout_centerInParent="true"
             android:layout_width="200dp"
             android:layout_height="200dp"
             app:arc_bottom_text=""
@@ -36,7 +35,8 @@
             android:layout_marginEnd="20dp"
             android:layout_gravity="center_horizontal|center_vertical"
             android:gravity="center_horizontal"
-            android:text="Your images are uploading Please wait don't leave app" />
+            android:text="Your images are uploading Please wait don't leave app"
+            tools:ignore="HardcodedText" />
 
     </FrameLayout>
 </layout>

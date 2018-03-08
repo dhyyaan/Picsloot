@@ -1,28 +1,13 @@
 <resources>
-    <string name="app_name">Picsloot</string>
-    <string name="facebook_app_id">1865811993465254</string>
-    <string name="fb_login_protocol_scheme">fb1865811993465254</string>
+    <string name="app_name">PicsLoot</string>
+    <string name="facebook_app_id">567887110236697</string>
+    <string name="fb_login_protocol_scheme">fb567887110236697</string>
     <string name="title_activity_pics_loot">PicsLootActivity</string>
     <string name="title_home">Home</string>
     <string name="title_order">Order</string>
     <string name="title_share">Share</string>
     <string name="title_profile">Profile</string>
-    <string-array name="state">
-        <item>Punjab</item>
-        <item>UP</item>
-        <item>UK</item>
-        <item>MP</item>
-        <item>AP</item>
-        <item>HPk</item>
-    </string-array>
-    <string-array name="city">
-        <item>Mohali</item>
-        <item>Chandigarh</item>
-        <item>Lucknow</item>
-        <item>Delhi</item>
-        <item>Mumbai</item>
-        <item>Chennai</item>
-    </string-array>
+
     <string name="general_max_per_image">Picture is too large, more than 200k limit.</string>
     <string name="general_ok">Ok</string>
     <string name="general_cancel">Cancel</string>

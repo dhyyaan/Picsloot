@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/black">
 
-    <com.think360.picsloot.imagepicker.widget.ClipImageLayout
+    <com.picsloot.imagepicker.widget.ClipImageLayout
         android:id="@+id/clip_layout"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"/>

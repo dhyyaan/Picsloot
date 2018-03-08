@@ -10,7 +10,7 @@
         android:focusable="true"
         android:focusableInTouchMode="true"
         android:background="@android:color/white"
-        tools:context="com.think360.sotaknights.activities.LoginActivity">
+        tools:context="com.picsloot.activities.PicsLootActivity">
 
         <ScrollView
             android:layout_width="match_parent"
@@ -20,45 +20,51 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
                 <ImageView
+                    android:layout_marginTop="8dp"
+                    android:layout_gravity="center"
                     android:id="@+id/ivLogin"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    app:srcCompat="@drawable/small_bg"
-                    android:layout_alignParentTop="true"
-                    android:scaleType="centerCrop" />
+                    app:srcCompat="@drawable/splash"
+                    android:scaleType="fitCenter"
+                    tools:ignore="ContentDescription" />
                 <TextView
-                    android:layout_marginTop="30dp"
+                    android:layout_marginTop="38dp"
                     android:id="@+id/tvEnterOtp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:textSize="18sp"
-                    android:text="Enter OTP sent to your registered mobile number" />
+                    android:textSize="16sp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginLeft="12dp"
+                    android:text="Enter OTP sent to your registered mobile number"
+                    tools:ignore="HardcodedText" />
 
 
 
-                <com.think360.picsloot.customview.OtpView
+                <com.picsloot.customview.OtpView
                     android:id="@+id/otp_view"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@android:color/white"
                     android:inputType="number"
                     android:textColor="@android:color/black"
-                  android:layout_marginTop="15dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="8dp"
-                    android:layout_marginRight="8dp"
-                    android:layout_marginLeft="8dp">
+                    android:layout_marginTop="14dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginLeft="12dp">
 
-                    <requestFocus
-                        android:layout_height="0dp"
-                        android:layout_width="0dp"
-                        tools:layout_editor_absoluteY="81dp"
-                        tools:layout_editor_absoluteX="0dp" />
-                </com.think360.picsloot.customview.OtpView>
+                </com.picsloot.customview.OtpView>
                <LinearLayout
+                   android:layout_marginStart="12dp"
+                   android:layout_marginEnd="12dp"
+                   android:layout_marginRight="12dp"
+                   android:layout_marginLeft="12dp"
                    android:id="@+id/llValidFor"
-                    android:layout_marginTop="15dp"
+                    android:layout_marginTop="14dp"
                     android:orientation="horizontal"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -67,33 +73,40 @@
                    android:id="@+id/tvValidFor"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Valid for  " />
+                    android:text="Valid for  "
+                    tools:ignore="HardcodedText" />
                  <TextView
                     android:id="@+id/tvSecons"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                      android:textSize="18sp"
-                   android:text="60" />
+                   android:text="60"
+                     tools:ignore="HardcodedText" />
                   <TextView
                    android:id="@+id/tvSecondsTxt"
                    android:layout_width="wrap_content"
                    android:layout_height="wrap_content"
-                   android:text="  seconds" />
+                   android:text="  seconds"
+                      tools:ignore="HardcodedText" />
                  </LinearLayout>
                 <TextView
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginLeft="12dp"
                     android:layout_marginTop="10dp"
                     android:id="@+id/tvGenerateOtp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Generate OTP again"
-                    android:gravity="center"/>
+                    android:gravity="center"
+                    tools:ignore="HardcodedText" />
                 <com.rafakob.drawme.DrawMeButton
                     android:id="@+id/btnNext"
                     android:layout_width="match_parent"
                     android:layout_height="42dp"
-                    android:layout_below="@+id/ivLogin"
-                    android:layout_marginBottom="8dp"
-                    android:layout_marginTop="45dp"
+                    android:layout_marginBottom="14dp"
+                    android:layout_marginTop="38dp"
                     android:fontFamily="sans-serif"
                     android:textAllCaps="true"
                     android:text="Next"
@@ -106,7 +119,8 @@
                     android:layout_marginEnd="12dp"
                     app:dm_backColorDisabled="@android:color/white"
                     app:dm_backColorPressed="@android:color/holo_red_dark"
-                    app:dm_radius="4dp" />
+                    app:dm_radius="4dp"
+                    tools:ignore="HardcodedText" />
                 </LinearLayout>
             </ScrollView>
 

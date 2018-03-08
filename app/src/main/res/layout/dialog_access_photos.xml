@@ -16,6 +16,7 @@
         android:textSize="18sp"
         android:textColor="#090909"
         android:layout_gravity="center"
+        android:gravity="center"
         android:text='"Picsloot"Would Like to Access Your Photos' />
 
     <TextView

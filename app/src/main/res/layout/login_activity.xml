@@ -10,12 +10,14 @@
     android:focusable="true"
     android:focusableInTouchMode="true"
     android:background="@android:color/white"
-    tools:context="com.think360.picsloot.activities.LoginActivity">
+    tools:context="com.picsloot.activities.LoginActivity">
     <ImageView
+        android:layout_gravity="center|top"
+        android:layout_marginTop="38dp"
         android:id="@+id/ivLogin"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/logo_withbg"
+        app:srcCompat="@drawable/splash"
         android:contentDescription="@string/app_name"
         android:scaleType="centerCrop" />
     <LinearLayout
@@ -26,7 +28,7 @@
         <com.rafakob.drawme.DrawMeButton
             android:fontFamily="sans-serif"
             android:textAllCaps="false"
-            android:text="Continue with facebook"
+            android:text="Continue with Facebook"
             android:textColor="@android:color/white"
             app:dm_backColor="#3B5998"
             app:dm_backColorDisabled="@android:color/white"
@@ -36,26 +38,39 @@
             android:drawableStart="@drawable/facebook"
             android:id="@+id/login_button"
             android:layout_width="match_parent"
-            android:layout_height="43dp"
+            android:layout_height="38dp"
             android:textSize="14sp"
-            android:layout_marginStart="13dp"
-            android:layout_marginLeft="14dp"
-            android:layout_marginRight="14dp"
-            android:layout_marginEnd="14dp"
-            android:layout_gravity="center" />
-
-
-        <com.google.android.gms.common.SignInButton
-            android:id="@+id/sign_in_button"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:textSize="14sp"
-            android:layout_marginTop="30dp"
-            android:layout_gravity="center"
             android:layout_marginStart="12dp"
             android:layout_marginLeft="12dp"
             android:layout_marginRight="12dp"
-            android:layout_marginEnd="12dp"/>
+            android:layout_marginEnd="12dp"
+            android:layout_gravity="center"
+            tools:ignore="HardcodedText"  />
+        <com.rafakob.drawme.DrawMeButton
+            android:fontFamily="sans-serif"
+            android:textAllCaps="false"
+            android:text="Continue with Gmail       "
+            android:textColor="#C61F36"
+            app:dm_backColor="#FFFFFF"
+            app:dm_backColorDisabled="@android:color/white"
+            app:dm_backColorPressed="@android:color/holo_red_dark"
+            app:dm_radius="4dp"
+            app:dm_stroke="1dp"
+            app:dm_strokeColor="#C61F36"
+            android:drawableLeft="@drawable/gmail"
+            android:drawableStart="@drawable/gmail"
+            android:id="@+id/sign_in_button"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:textSize="14sp"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_gravity="center"
+            tools:ignore="HardcodedText" />
+
     </LinearLayout>
 
 

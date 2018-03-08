@@ -16,15 +16,17 @@
         android:layout_gravity="center"
         android:id="@+id/ll"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent">
 
         <ImageView
             android:id="@+id/ivCongratulation"
-            android:layout_width="200dp"
-            android:layout_height="200dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:scaleType="centerCrop"
             android:layout_gravity="center|top"
-            app:srcCompat="@drawable/smile" />
+            app:srcCompat="@drawable/smile"
+            tools:ignore="ContentDescription" />
         <TextView
             android:id="@+id/tvCong"
             android:layout_width="wrap_content"
@@ -32,12 +34,13 @@
             android:layout_marginTop="15dp"
             android:textSize="34sp"
             android:textColor="#323232"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginEnd="20dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
             android:layout_gravity="center"
-            android:text="Congratulations!" />
+            android:text="Congratulations!"
+            tools:ignore="HardcodedText" />
         <TextView
             android:id="@+id/tvSuccess"
             android:layout_width="wrap_content"
@@ -45,17 +48,17 @@
             android:layout_marginTop="15dp"
             android:textSize="18sp"
             android:textColor="#8A8A8A"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginEnd="20dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
             android:gravity="center"
-            android:text="You have successfully sent all images" />
+            android:text="You have successfully sent all images"
+            tools:ignore="HardcodedText" />
         <com.rafakob.drawme.DrawMeButton
             android:id="@+id/btnViewOrder"
             android:layout_width="match_parent"
-            android:layout_height="42dp"
-            android:layout_below="@+id/ivLogin"
+            android:layout_height="38dp"
             android:layout_marginBottom="8dp"
             android:fontFamily="sans-serif"
             android:textAllCaps="true"
@@ -64,13 +67,14 @@
             android:textColor="@android:color/white"
             android:textSize="14sp"
             app:dm_backColor="#C61F36"
-            android:layout_marginStart="20dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:layout_marginEnd="20dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginEnd="12dp"
             app:dm_backColorDisabled="@android:color/white"
             app:dm_backColorPressed="@android:color/holo_red_dark"
-            app:dm_radius="4dp" />
+            app:dm_radius="4dp"
+            tools:ignore="HardcodedText" />
     </LinearLayout>
     </FrameLayout>
 </layout>

@@ -17,7 +17,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <com.think360.picsloot.imagepicker.widget.PickerBottomLayout
+        <com.picsloot.imagepicker.widget.PickerBottomLayout
             android:id="@+id/picker_bottom"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

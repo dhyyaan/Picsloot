@@ -78,18 +78,5 @@
         app:backgroundTint="@color/colorAccent"
         android:nextFocusLeft="@+id/otp_four_edit_text"
         android:nextFocusRight="@+id/otp_five_edit_text" />
-
- <!--   <android.support.v7.widget.AppCompatEditText
-        android:id="@+id/otp_six_edit_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:maxLength="1"
-        android:maxLines="1"
-        android:layout_weight="1"
-        android:textStyle="bold"
-        app:backgroundTint="@color/colorAccent"
-        android:nextFocusLeft="@+id/otp_five_edit_text"
-        android:nextFocusRight="@+id/otp_six_edit_text" />-->
-        </LinearLayout>
+</LinearLayout>
 

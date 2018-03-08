@@ -1,27 +1,35 @@
 {
   "project_info": {
-    "project_number": "847967390152",
-    "firebase_url": "https://picsloot-83ab3.firebaseio.com",
-    "project_id": "picsloot-83ab3",
-    "storage_bucket": "picsloot-83ab3.appspot.com"
+    "project_number": "464273528120",
+    "firebase_url": "https://picsloot-19d92.firebaseio.com",
+    "project_id": "picsloot-19d92",
+    "storage_bucket": "picsloot-19d92.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:847967390152:android:298f8e0c8dd04db7",
+        "mobilesdk_app_id": "1:464273528120:android:f8b308b52820a4d2",
         "android_client_info": {
-          "package_name": "com.think360.picsloot"
+          "package_name": "com.picsloot"
         }
       },
       "oauth_client": [
         {
-          "client_id": "847967390152-7lopf0t44h16jd7qi2adm7mt1htume1j.apps.googleusercontent.com",
+          "client_id": "464273528120-t5a94g4vcrd0soidl81hcnelpuphme10.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.picsloot",
+            "certificate_hash": "f25a0683be8983fe1b5eae5f2a43f67bf9edbe4e"
+          }
+        },
+        {
+          "client_id": "464273528120-ttbkgfnd5e88v8mhso9icavq9veh7clf.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBWelWkIpAYffpLylWuOE3XJg8CzCjixUo"
+          "current_key": "AIzaSyAihu-pXNHyiDc4lCzRaFL9TppVgsiO9oM"
         }
       ],
       "services": {
@@ -29,8 +37,13 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "464273528120-ttbkgfnd5e88v8mhso9icavq9veh7clf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         },
         "ads_service": {
           "status": 2

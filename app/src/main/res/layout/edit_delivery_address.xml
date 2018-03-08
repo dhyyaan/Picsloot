@@ -10,7 +10,7 @@
         android:focusable="true"
         android:focusableInTouchMode="true"
         android:background="@android:color/white"
-        tools:context="com.think360.sotaknights.activities.LoginActivity">
+        tools:context="com.think360.sotaknights.activities.PicsLootActivity">
 
         <ScrollView
             android:layout_width="match_parent"
@@ -27,23 +27,22 @@
                     android:textColor="#404040"
                     android:textSize="18sp"
                     android:layout_marginTop="20dp"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginEnd="20dp"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"
-                    android:text="Edit Delivery Address" />
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:text="Edit Delivery Address"
+                    tools:ignore="HardcodedText" />
 
                 <android.support.design.widget.TextInputLayout
                     android:id="@+id/inputLayoutAddress"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginEnd="20dp"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"
-                    android:layout_marginTop="20dp">
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="12dp">
 
                     <android.support.design.widget.TextInputEditText
                         android:id="@+id/etAddress"
@@ -53,42 +52,43 @@
                         android:inputType="text"
                         android:hint="Address"
                         android:ems="10"
-                        android:textSize="14sp" />
+                        android:textSize="14sp"
+                        tools:ignore="HardcodedText" />
                 </android.support.design.widget.TextInputLayout>
 
                 <Spinner
-                    android:layout_marginStart="20dp"
-                    android:layout_marginEnd="20dp"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"
-                    android:layout_marginTop="12dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginTop="2dp"
                     android:id="@+id/spState"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
                 <View
-                    android:layout_marginTop="12dp"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginEnd="20dp"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginEnd="17dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginRight="17dp"
                     android:layout_width="match_parent"
                     android:background="#959595"
                     android:layout_height="1dp"/>
                 <Spinner
-                    android:layout_marginStart="20dp"
-                    android:layout_marginEnd="20dp"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"
-                    android:layout_marginTop="14dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginTop="2dp"
                     android:id="@+id/spCity"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
                 <View
-                    android:layout_marginTop="12dp"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginEnd="20dp"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginEnd="17dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginRight="17dp"
                     android:layout_width="match_parent"
                     android:background="#959595"
                     android:layout_height="1dp"/>
@@ -96,13 +96,11 @@
                     android:id="@+id/inputLayoutPinCode"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginEnd="20dp"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"
-                    android:layout_marginTop="10dp">
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="14dp">
 
                     <android.support.design.widget.TextInputEditText
                         android:id="@+id/etPinCode"
@@ -112,18 +110,17 @@
                         android:focusable="true"
                         android:hint="Pincode"
                         android:inputType="number"
-                        android:textSize="14sp" />
+                        android:textSize="14sp"
+                        tools:ignore="HardcodedText" />
                 </android.support.design.widget.TextInputLayout>
                 <android.support.design.widget.TextInputLayout
                     android:id="@+id/inputComment"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginEnd="20dp"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
                     android:layout_marginTop="10dp">
 
                     <android.support.design.widget.TextInputEditText
@@ -134,13 +131,13 @@
                         android:inputType="text"
                         android:hint="Comment"
                         android:ems="10"
-                        android:textSize="14sp" />
+                        android:textSize="14sp"
+                        tools:ignore="HardcodedText" />
                 </android.support.design.widget.TextInputLayout>
                 <com.rafakob.drawme.DrawMeButton
                     android:id="@+id/btnSaveDeliveryAddress"
                     android:layout_width="match_parent"
-                    android:layout_height="42dp"
-                    android:layout_below="@+id/ivLogin"
+                    android:layout_height="38dp"
                     android:layout_marginBottom="8dp"
                     android:layout_marginTop="45dp"
                     android:fontFamily="sans-serif"
@@ -149,13 +146,14 @@
                     android:textColor="@android:color/white"
                     android:textSize="14sp"
                     app:dm_backColor="#C61F36"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"
-                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginEnd="12dp"
                     app:dm_backColorDisabled="@android:color/white"
                     app:dm_backColorPressed="@android:color/holo_red_dark"
-                    app:dm_radius="4dp" />
+                    app:dm_radius="4dp"
+                    tools:ignore="HardcodedText" />
 
 
             </LinearLayout>

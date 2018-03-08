@@ -10,7 +10,7 @@
     android:focusable="true"
     android:focusableInTouchMode="true"
     android:background="@android:color/white"
-    tools:context="com.think360.picsloot.activities.PicsLootActivity">
+    tools:context="com.picsloot.activities.PicsLootActivity">
   <com.rafakob.drawme.DrawMeLinearLayout
       android:orientation="vertical"
       app:dm_stroke="1dp"
@@ -23,15 +23,16 @@
         android:id="@+id/flUser"
         android:layout_alignParentTop="true"
         android:layout_marginTop="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginStart="16dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <ImageView
             android:id="@+id/ivUser"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:srcCompat="@drawable/user" />
+            app:srcCompat="@drawable/user"
+            tools:ignore="ContentDescription" />
 
     <TextView
         android:layout_marginTop="4dp"
@@ -40,17 +41,19 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="35dp"
         android:layout_marginStart="35dp"
-        android:text="Date 22/09/2017, 0:00 PM" />
+        android:text="Date 22/09/2017, 0:00 PM"
+        tools:ignore="HardcodedText" />
     </FrameLayout>
     <TextView
         android:layout_marginTop="4dp"
         android:id="@+id/tvNoOfImages"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="21dp"
-        android:layout_marginStart="21dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
         android:textColor="#2F2F2F"
-        android:text="5 images sent" />
+        android:text="5 images sent"
+        tools:ignore="HardcodedText" />
     <android.support.v7.widget.RecyclerView
         android:id="@+id/rv"
         android:layout_below="@+id/ivUser"
@@ -58,10 +61,10 @@
         android:layout_height="wrap_content"
         android:divider="@null"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
         android:orientation="horizontal"
         app:reverseLayout="false"
         app:layoutManager="android.support.v7.widget.LinearLayoutManager" />
@@ -69,15 +72,16 @@
         android:id="@+id/flImages"
         android:layout_alignParentTop="true"
         android:layout_marginTop="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginStart="16dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
     <ImageView
         android:id="@+id/ivImages"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/images" />
+        app:srcCompat="@drawable/images"
+        tools:ignore="ContentDescription" />
     <TextView
         android:layout_marginTop="4dp"
         android:id="@+id/tvDateTimeImages2"
@@ -85,31 +89,34 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="35dp"
         android:layout_marginStart="35dp"
-        android:text="Date 17/04/2017, 04:00 PM" />
+        android:text="Date 17/04/2017, 04:00 PM"
+        tools:ignore="HardcodedText" />
     </FrameLayout>
     <TextView
         android:layout_marginTop="4dp"
         android:id="@+id/tvName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="21dp"
-        android:layout_marginStart="21dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
         android:textColor="#2F2F2F"
-        android:text="PicsLoot" />
+        android:text="PicsLoot"
+        tools:ignore="HardcodedText" />
 
     <FrameLayout
         android:id="@+id/flImages2"
         android:layout_alignParentTop="true"
         android:layout_marginTop="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginStart="16dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
     <ImageView
         android:id="@+id/ivImages2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/images" />
+        app:srcCompat="@drawable/images"
+        tools:ignore="ContentDescription" />
     <TextView
         android:layout_marginTop="4dp"
         android:id="@+id/tvDateTimeImages3"
@@ -117,23 +124,25 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="35dp"
         android:layout_marginStart="35dp"
-        android:text="Date 17/04/2017, 04:00 PM" />
+        android:text="Date 17/04/2017, 04:00 PM"
+        tools:ignore="HardcodedText" />
     </FrameLayout>
     <TextView
         android:layout_marginTop="4dp"
         android:id="@+id/tvName2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="21dp"
-        android:layout_marginStart="21dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
         android:textColor="#2F2F2F"
-        android:text="PicsLoot" />
+        android:text="PicsLoot"
+        tools:ignore="HardcodedText" />
     <FrameLayout
         android:id="@+id/flCompletet"
         android:layout_alignParentTop="true"
         android:layout_marginTop="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginStart="16dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -141,7 +150,8 @@
         android:id="@+id/ivCompletet"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/complete" />
+        app:srcCompat="@drawable/complete"
+        tools:ignore="ContentDescription" />
     <TextView
         android:layout_marginTop="4dp"
         android:id="@+id/tvDateTimeImages4"
@@ -149,17 +159,19 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="35dp"
         android:layout_marginStart="35dp"
-        android:text="Date 17/04/2017, 04:00 PM" />
+        android:text="Date 17/04/2017, 04:00 PM"
+        tools:ignore="HardcodedText" />
     </FrameLayout>
     <TextView
         android:layout_marginTop="4dp"
         android:id="@+id/tvStatus"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="21dp"
-        android:layout_marginStart="21dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
         android:textColor="#2F2F2F"
-        android:text="PicsLoot" />
+        android:text="PicsLoot"
+        tools:ignore="HardcodedText" />
 
         </com.rafakob.drawme.DrawMeLinearLayout>
 

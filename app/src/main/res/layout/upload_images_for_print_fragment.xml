@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <LinearLayout
         android:orientation="vertical"
@@ -10,15 +11,17 @@
         android:focusable="true"
         android:focusableInTouchMode="true"
         android:background="@android:color/white">
+
         <android.support.v7.widget.RecyclerView
             android:id="@+id/rvImages"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:columnWidth="@dimen/column_width"
-            android:layout_marginBottom="8dp"
-            android:layout_marginLeft="8dp"
-            android:clipToPadding="false"  />
-
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="12dp"
+            android:clipToPadding="false"
+            android:columnWidth="@dimen/column_width" />
 
 
         <TextView
@@ -27,14 +30,14 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center|bottom"
             android:textSize="16sp"
-            android:layout_marginTop="22dp"
-            android:text="5 images uploaded " />
+            android:layout_marginTop="14dp"
+            android:text="5 images uploaded "
+            tools:ignore="HardcodedText" />
 
         <com.rafakob.drawme.DrawMeButton
             android:id="@+id/btnUploadImages"
             android:layout_width="match_parent"
-            android:layout_height="42dp"
-            android:layout_below="@+id/ivLogin"
+            android:layout_height="38dp"
             android:layout_marginBottom="8dp"
             android:layout_marginTop="18dp"
             android:fontFamily="sans-serif"
@@ -43,13 +46,14 @@
             android:textColor="@android:color/white"
             android:textSize="14sp"
             app:dm_backColor="#C61F36"
-            android:layout_marginStart="20dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:layout_marginEnd="20dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginEnd="12dp"
             app:dm_backColorDisabled="@android:color/white"
             app:dm_backColorPressed="@android:color/holo_red_dark"
-            app:dm_radius="4dp" />
+            app:dm_radius="4dp"
+            tools:ignore="HardcodedText" />
 
     </LinearLayout>
 

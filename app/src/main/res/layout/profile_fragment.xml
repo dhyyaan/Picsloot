@@ -10,8 +10,11 @@ xmlns:tools="http://schemas.android.com/tools">
     android:focusable="true"
     android:focusableInTouchMode="true"
     android:background="@android:color/white"
-    tools:context="com.think360.picsloot.activities.PicsLootActivity">
-
+    tools:context="com.picsloot.activities.PicsLootActivity">
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swiperefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -19,59 +22,51 @@ xmlns:tools="http://schemas.android.com/tools">
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-
             <FrameLayout
-                android:background="#D8D8D8"
-                android:id="@+id/flImage"
+                android:id="@+id/ivLogin"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
                 <FrameLayout
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
                     android:layout_gravity="center"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content">
                     <com.mikhaellopez.circularimageview.CircularImageView
-                        android:id="@+id/cIvProfilePic"
                         android:layout_width="120dp"
                         android:layout_height="120dp"
-                        android:layout_gravity="center"
-                        android:layout_marginBottom="24dp"
-                        android:layout_marginTop="24dp"
                         android:src="@drawable/no_img"
                         app:civ_border_color="#AAAAAA"
                         app:civ_border_width="5dp"
                         app:civ_shadow="true"
+                        app:civ_shadow_radius="5"
                         app:civ_shadow_color="#CAFFFF"
-                        app:civ_shadow_radius="5" />
+                        android:id="@+id/cIvProfilePic"
+                        android:layout_gravity="center" />
 
                     <ImageView
-                        android:layout_gravity="center|right"
+                        android:layout_gravity="right|end"
                         android:id="@+id/ivProfileImageEdit"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="42dp"
-                        app:srcCompat="@drawable/edit_profile" />
+                        app:srcCompat="@drawable/edit_profile"
+                        tools:ignore="ContentDescription,RtlHardcoded" />
                 </FrameLayout>
 
                 <ProgressBar
                     android:id="@+id/progressBar2"
                     android:layout_width="22dp"
                     android:layout_height="22dp"
-                    android:layout_centerHorizontal="true"
-                    android:layout_gravity="center_horizontal|center_vertical"
-                    android:visibility="gone" />
-
+                    android:visibility="gone"
+                    android:layout_gravity="center" />
             </FrameLayout>
-
 
             <android.support.design.widget.TextInputLayout
                 android:id="@+id/inputLayoutName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_below="@+id/ivLogin"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
                 android:layout_marginTop="10dp">
 
                 <android.support.design.widget.TextInputEditText
@@ -82,17 +77,15 @@ xmlns:tools="http://schemas.android.com/tools">
                     android:inputType="textPersonName"
                     android:hint="Name"
                     android:ems="10"
-                    android:textSize="14sp" />
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText" />
             </android.support.design.widget.TextInputLayout>
             <android.support.design.widget.TextInputLayout
                 android:id="@+id/inputLayoutEmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_below="@+id/inputLayoutName"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
                 android:layout_marginTop="10dp">
 
                 <android.support.design.widget.TextInputEditText
@@ -104,17 +97,15 @@ xmlns:tools="http://schemas.android.com/tools">
                     android:hint="Email"
                     android:ems="10"
                     android:enabled="false"
-                    android:textSize="14sp" />
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText" />
             </android.support.design.widget.TextInputLayout>
             <FrameLayout
                 android:id="@+id/flMobileNo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_below="@+id/inputLayoutEmail"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
                 android:layout_marginTop="10dp">
                 <android.support.design.widget.TextInputLayout
                     android:id="@+id/inputLayoutMobileNumber"
@@ -130,7 +121,8 @@ xmlns:tools="http://schemas.android.com/tools">
                         android:inputType="phone"
                         android:hint="Mobile Number"
                         android:ems="10"
-                        android:textSize="14sp" />
+                        android:textSize="14sp"
+                        tools:ignore="HardcodedText" />
                 </android.support.design.widget.TextInputLayout>
                 <com.rafakob.drawme.DrawMeButton
                     android:id="@+id/btnVerify"
@@ -145,14 +137,16 @@ xmlns:tools="http://schemas.android.com/tools">
                     app:dm_backColor="#C61F36"
                     app:dm_backColorDisabled="#C61F36"
                     app:dm_backColorPressed="@android:color/black"
-                    app:dm_radius="4dp" />
+                    app:dm_radius="4dp"
+                    tools:ignore="HardcodedText" />
             </FrameLayout>
             <LinearLayout
-                android:layout_marginStart="20dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="30dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="12dp"
                 android:id="@+id/llEditDelete"
-                android:layout_below="@+id/flMobileNo"
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -160,9 +154,10 @@ xmlns:tools="http://schemas.android.com/tools">
                     android:layout_weight="1"
                     android:id="@+id/textView"
                     android:layout_gravity="center"
-                    android:layout_width="match_parent"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:text="Delivery Address" />
+                    android:text="Delivery Address"
+                    tools:ignore="HardcodedText" />
                 <com.rafakob.drawme.DrawMeButton
                     android:id="@+id/btnEdit"
                     android:layout_width="65dp"
@@ -176,7 +171,8 @@ xmlns:tools="http://schemas.android.com/tools">
                     app:dm_backColor="#000000"
                     app:dm_backColorDisabled="#000000"
                     app:dm_backColorPressed="@android:color/white"
-                    app:dm_radius="0dp" />
+                    app:dm_radius="0dp"
+                    tools:ignore="HardcodedText" />
                 <com.rafakob.drawme.DrawMeButton
                     android:id="@+id/btnDelete"
                     android:layout_width="65dp"
@@ -184,19 +180,19 @@ xmlns:tools="http://schemas.android.com/tools">
                     android:fontFamily="sans-serif"
                     android:textAllCaps="false"
                     android:text="Delete"
-                    android:drawableTop="@drawable/remove"
+                    android:drawableTop="@drawable/trash"
                     android:textColor="@android:color/white"
                     android:textSize="14sp"
                     app:dm_backColor="#C61F36"
                     app:dm_backColorDisabled="#C61F36"
                     app:dm_backColorPressed="@android:color/black"
-                    app:dm_radius="0dp" />
+                    app:dm_radius="0dp"
+                    tools:ignore="HardcodedText" />
             </LinearLayout>
             <com.rafakob.drawme.DrawMeButton
                 android:id="@+id/btnSaveProfile"
                 android:layout_width="match_parent"
-                android:layout_height="42dp"
-                android:layout_below="@+id/llEditDelete"
+                android:layout_height="38dp"
                 android:layout_marginBottom="8dp"
                 android:layout_marginTop="30dp"
                 android:fontFamily="sans-serif"
@@ -211,12 +207,12 @@ xmlns:tools="http://schemas.android.com/tools">
                 android:layout_marginEnd="12dp"
                 app:dm_backColorDisabled="@android:color/white"
                 app:dm_backColorPressed="@android:color/holo_red_dark"
-                app:dm_radius="4dp" />
+                app:dm_radius="4dp"
+                tools:ignore="HardcodedText" />
             <com.rafakob.drawme.DrawMeButton
                 android:id="@+id/btnLogout"
                 android:layout_width="match_parent"
                 android:layout_height="42dp"
-                android:layout_below="@+id/btnSaveProfile"
                 android:layout_marginBottom="8dp"
                 android:layout_marginTop="10dp"
                 android:fontFamily="sans-serif"
@@ -231,9 +227,11 @@ xmlns:tools="http://schemas.android.com/tools">
                 android:layout_marginEnd="12dp"
                 app:dm_backColorDisabled="@android:color/white"
                 app:dm_backColorPressed="@android:color/holo_red_dark"
-                app:dm_radius="4dp" />
+                app:dm_radius="4dp"
+                tools:ignore="HardcodedText" />
         </LinearLayout>
     </ScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>
 
     <ProgressBar
         android:id="@+id/progressBar"

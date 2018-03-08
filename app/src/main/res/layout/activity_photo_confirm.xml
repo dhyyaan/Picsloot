@@ -39,7 +39,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:scaleType="centerInside"
-            android:src="@drawable/ic_takephoto_quit"/>
+            android:src="@drawable/ic_general_cancel_left"/>
     </LinearLayout>
 
     <ImageView
